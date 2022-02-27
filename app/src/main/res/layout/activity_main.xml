@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_open"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_channel"
+            android:text="Open"
+            android:textSize="28sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_lexer"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_message"
+            android:text="Lexical"
+            android:textSize="28sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_grammar"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_better"
+            android:text="Grammar"
+            android:textSize="28sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_calculate"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_setting"
+            android:text="Calculate"
+            android:textSize="28sp"/>
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_below="@id/rg_tab_bar"
+        android:background="@color/div_white" />
+
+
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_below="@+id/div_tab_bar"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:background="#F9F9E3"
+        android:focusable="false"
+        android:gravity="top"
+        android:maxLines="350"
+        android:textSize="28sp"></EditText>
+
+    <View
+        android:id="@+id/div_tab_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_below="@id/edit"
+        android:background="@color/div_white" />
+
+    <EditText
+        android:id="@+id/comp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/div_tab_bar1"
+        android:layout_height="350dp"
+        android:background="@color/bg_white"
+        android:textSize="28sp"
+        android:gravity="top"
+        android:maxLines="350"
+        android:focusable="false">
+    </EditText>
+
+
+
+</RelativeLayout>

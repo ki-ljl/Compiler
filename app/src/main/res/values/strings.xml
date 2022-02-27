@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Compiler</string>
+    <string name="source_1">&#x0020;
+#include&lt;stdio.h&gt;\n
+#define  ADDR_START   0x20480000\n
+#define  ADDR_A        ADDR_START + 0x04\n
+#define  ADDR_B        ADDR_START + 15\n
+#define  BUFFER_SIZE  1024\n
+#define  BUFFER_END    ADDR_START + BUFFER_SIZE - 1\n
+#define  PI      3.14\n
+void main()\n
+{\n
+\t\t\t\t\t\tfloat r, l;\n
+\t\t\t\t\t\tscanf(\"%f\", &amp;r);\n
+\t\t\t\t\t\tl = 2 * PI * r;\n
+\t\t\t\t\t\tmemset(ADDR_START, BUFFER_SIZE, 0x00);\n
+}\n
+    </string>
+
+
+    <string name="source_2">&#x0020;
+#include&lt;stdio.h&gt;\n
+#define  A   25\n
+#define  B    A + 5 &lt;&lt; 2 + ! 5 + (1 &#038; 2) * (3 | 2)\n
+#define  C    B + 5 &#038;&#038; 6 / (A &gt;&gt; 1)\n
+#define  D    A * B + C % B\n
+void main()\n
+{\n
+\t\t\t\t\t\tfloat l;\n
+\t\t\t\t\t\tl = 2 * 5;\n
+\t\t\t\t\t\tl -= 6\n
+\t\t\t\t\t\tmemset(A, B, C);\n
+}\n
+    </string>
+
+    <string name="source_3">&#x0020;
+#include&lt;stdio.h&gt;\n
+#define   TH     0x70\n
+#define    SIZE     25\n
+#define    X     TH + SIZE / 5\n
+#define    Y     X + (7 > 6) &#038;&#038; (5 >= 4)\n
+#define    Z     (X * Y + SIZE * X) % 7 + (5 || 6)\n
+#define    M     X + Y + Z\n
+#define    N      2 * X\n
+#define    TB     3\n
+void main()\n
+{\n
+\t\t\t\t\t\tfloat l;\n
+\t\t\t\t\t\tl = 2 * 5;\n
+\t\t\t\t\t\tl /= 5\n
+\t\t\t\t\t\tmemset(X, Y, Z);\n
+}\n
+    </string>
+
+    <string name="tab">&#8201;&#160;
+    </string>
+</resources>
